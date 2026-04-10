@@ -1,0 +1,263 @@
+┌──(max㉿kali)-[~/work/Lesson2]
+└─$ cd ..     
+                                                                                         
+┌──(max㉿kali)-[~/work]
+└─$ ls -l
+total 8
+drwxrwxr-x 2 max max 4096 Apr 10 01:06 DZ
+drwxrwxr-x 3 max max 4096 Apr 10 02:04 Lesson2
+                                                                                         
+┌──(max㉿kali)-[~/work]
+└─$ cd DZ 
+                                                                                         
+┌──(max㉿kali)-[~/work/DZ]
+└─$ touch file.txt
+                                                                                         
+┌──(max㉿kali)-[~/work/DZ]
+└─$ touch file1   
+                                                                                         
+┌──(max㉿kali)-[~/work/DZ]
+└─$ nano file     
+                                                                                         
+┌──(max㉿kali)-[~/work/DZ]
+└─$ ls -l
+total 0
+-rw-rw-r-- 1 max max 0 Apr 10 02:50 file1
+-rw-rw-r-- 1 max max 0 Apr 10 02:50 file.txt
+                                                                                         
+┌──(max㉿kali)-[~/work/DZ]
+└─$ mkdir Test/
+                                                                                         
+┌──(max㉿kali)-[~/work/DZ]
+└─$ ls -l
+total 4
+-rw-rw-r-- 1 max max    0 Apr 10 02:50 file1
+-rw-rw-r-- 1 max max    0 Apr 10 02:50 file.txt
+drwxrwxr-x 2 max max 4096 Apr 10 02:53 Test
+                                                                                         
+┌──(max㉿kali)-[~/work/DZ]
+└─$ ls -lah
+total 12K
+drwxrwxr-x 3 max max 4.0K Apr 10 02:53 .
+drwxrwxr-x 4 max max 4.0K Apr 10 01:29 ..
+-rw-rw-r-- 1 max max    0 Apr 10 02:50 file1
+-rw-rw-r-- 1 max max    0 Apr 10 02:50 file.txt
+drwxrwxr-x 2 max max 4.0K Apr 10 02:53 Test
+                                                                                         
+┌──(max㉿kali)-[~/work/DZ]
+└─$ rmdir Test 
+                                                                                         
+┌──(max㉿kali)-[~/work/DZ]
+└─$ rmdir Test
+rmdir: failed to remove 'Test': No such file or directory
+                                                                                         
+┌──(max㉿kali)-[~/work/DZ]
+└─$ ls -lah   
+total 8.0K
+drwxrwxr-x 2 max max 4.0K Apr 10 02:53 .
+drwxrwxr-x 4 max max 4.0K Apr 10 01:29 ..
+-rw-rw-r-- 1 max max    0 Apr 10 02:50 file1
+-rw-rw-r-- 1 max max    0 Apr 10 02:50 file.txt
+                                                                                         
+┌──(max㉿kali)-[~/work/DZ]
+└─$ pwd
+/home/max/work/DZ
+                                                                                         
+┌──(max㉿kali)-[~/work/DZ]
+└─$ pwd --Help 
+pwd: bad option: -H
+                                                                                         
+┌──(max㉿kali)-[~/work/DZ]
+└─$ cat file
+cat: file: No such file or directory
+                                                                                         
+┌──(max㉿kali)-[~/work/DZ]
+└─$ cat file.txt
+                                                                                         
+┌──(max㉿kali)-[~/work/DZ]
+└─$ echo "123" > file.txt 
+                                                                                         
+┌──(max㉿kali)-[~/work/DZ]
+└─$ cat file.txt         
+123
+                                                                                         
+┌──(max㉿kali)-[~/work/DZ]
+└─$ rm file   
+rm: cannot remove 'file': No such file or directory
+                                                                                         
+┌──(max㉿kali)-[~/work/DZ]
+└─$ ls -lah
+total 12K
+drwxrwxr-x 2 max max 4.0K Apr 10 02:53 .
+drwxrwxr-x 4 max max 4.0K Apr 10 01:29 ..
+-rw-rw-r-- 1 max max    0 Apr 10 02:50 file1
+-rw-rw-r-- 1 max max    4 Apr 10 02:55 file.txt
+                                                                                         
+┌──(max㉿kali)-[~/work/DZ]
+└─$ rm file1
+                                                                                         
+┌──(max㉿kali)-[~/work/DZ]
+└─$ ls -lah 
+total 12K
+drwxrwxr-x 2 max max 4.0K Apr 10 02:56 .
+drwxrwxr-x 4 max max 4.0K Apr 10 01:29 ..
+-rw-rw-r-- 1 max max    4 Apr 10 02:55 file.txt
+                                                                                         
+┌──(max㉿kali)-[~/work/DZ]
+└─$ nano file11        
+                                                                                         
+┌──(max㉿kali)-[~/work/DZ]
+└─$ 
+                                                                                         
+┌──(max㉿kali)-[~/work/DZ]
+└─$ ls -lah    
+total 16K
+drwxrwxr-x 2 max max 4.0K Apr 10 02:57 .
+drwxrwxr-x 4 max max 4.0K Apr 10 01:29 ..
+-rw-rw-r-- 1 max max    7 Apr 10 02:57 file11
+-rw-rw-r-- 1 max max    4 Apr 10 02:55 file.txt
+                                                                                         
+┌──(max㉿kali)-[~/work/DZ]
+└─$ nano file11 
+                                                                                         
+┌──(max㉿kali)-[~/work/DZ]
+└─$ head file11
+123123
+
+Команда head в Kali Linux (и Linux в целом) используется для быстрого просмотра начальной части файлов или вывода (по умолчанию — первые 10 строк). Она входит в состав GNU Core Utilities, что делает её незаменимой для работы с логами и текстовыми данными в терминале. 
+IBM
+IBM
+ +3
+Основные возможности и примеры использования:
+Просмотр начала файла:
+head file.txt — выводит первые 10 строк файла file.txt.
+Указание количества строк (-n):
+                                                                                         
+┌──(max㉿kali)-[~/work/DZ]
+└─$ head -n 5 file11
+123123
+
+Команда head в Kali Linux (и Linux в целом) используется для быстрого просмотра начальной части файлов или вывода (по умолчанию — первые 10 строк). Она входит в состав GNU Core Utilities, что делает её незаменимой для работы с логами и текстовыми данными в терминале. 
+IBM
+IBM
+                                                                                         
+┌──(max㉿kali)-[~/work/DZ]
+└─$ history | head  
+    1  whoami
+    2  uname -r
+    3  pwd
+    4  sudo apt update
+    5  sudo apt upgrade -y
+    6  uname -r
+    7  whoami
+    8  sudo reboot now
+    9  apt-get install git
+   10  sudo apt-get install git
+                                                                                         
+┌──(max㉿kali)-[~/work/DZ]
+└─$ tail file11
+Указание количества строк (-n):
+head -n 5 file.txt — выводит первые 5 строк файла.
+Просмотр начала нескольких файлов:
+head file1.txt file2.txt — выводит заголовки с именами файлов и их первые 10 строк.
+Использование с конвейером (|):
+history | head — показывает 10 самых старых команд в истории.
+Вывод байтов (-c):
+head -c 100 file.txt — выводит первые 100 байт файла.
+Исключение последних строк (-n -):
+head -n -20 file.txt — выводит весь файл, кроме последних 20 строк. 
+                                                                                         
+┌──(max㉿kali)-[~/work/DZ]
+└─$ tail -n 5 file11
+history | head — показывает 10 самых старых команд в истории.
+Вывод байтов (-c):
+head -c 100 file.txt — выводит первые 100 байт файла.
+Исключение последних строк (-n -):
+head -n -20 file.txt — выводит весь файл, кроме последних 20 строк. 
+                                                                                         
+┌──(max㉿kali)-[~/work/DZ]
+└─$ less file
+file: No such file or directory
+                                                                                         
+┌──(max㉿kali)-[~/work/DZ]
+└─$ less file11
+                                                                                         
+┌──(max㉿kali)-[~/work/DZ]
+└─$ tree            
+.
+├── file11
+└── file.txt
+
+1 directory, 2 files
+                                                                                         
+┌──(max㉿kali)-[~/work/DZ]
+└─$ cp file11 /work
+cp: cannot create regular file '/work': Permission denied
+                                                                                         
+┌──(max㉿kali)-[~/work/DZ]
+└─$ 
+                                                                                         
+┌──(max㉿kali)-[~/work/DZ]
+└─$ sudo cp file11 /work
+[sudo] password for max: 
+                                                                                         
+┌──(max㉿kali)-[~/work/DZ]
+└─$ cd .           
+                                                                                         
+┌──(max㉿kali)-[~/work/DZ]
+└─$ cd ..
+                                                                                         
+┌──(max㉿kali)-[~/work]
+└─$ ls -lah    
+total 16K
+drwxrwxr-x  4 max max 4.0K Apr 10 01:29 .
+drwx------ 17 max max 4.0K Apr 10 02:34 ..
+drwxrwxr-x  2 max max 4.0K Apr 10 02:58 DZ
+drwxrwxr-x  3 max max 4.0K Apr 10 02:04 Lesson2
+                                                                                         
+┌──(max㉿kali)-[~/work]
+└─$ cd dz/
+cd: no such file or directory: dz/
+                                                                                         
+┌──(max㉿kali)-[~/work]
+└─$ cd DZ/
+                                                                                         
+┌──(max㉿kali)-[~/work/DZ]
+└─$ ls     
+file11  file.txt
+                                                                                         
+┌──(max㉿kali)-[~/work/DZ]
+└─$ ls -lah
+total 16K
+drwxrwxr-x 2 max max 4.0K Apr 10 02:58 .
+drwxrwxr-x 4 max max 4.0K Apr 10 01:29 ..
+-rw-rw-r-- 1 max max 1.4K Apr 10 02:58 file11
+-rw-rw-r-- 1 max max    4 Apr 10 02:55 file.txt
+                                                                                         
+┌──(max㉿kali)-[~/work/DZ]
+└─$ cp file.txt ./work 
+                                                                                         
+┌──(max㉿kali)-[~/work/DZ]
+└─$ rm work 
+                                                                                         
+┌──(max㉿kali)-[~/work/DZ]
+└─$ cp file.txt ../work
+                                                                                         
+┌──(max㉿kali)-[~/work/DZ]
+└─$ ls -lah
+total 16K
+drwxrwxr-x 2 max max 4.0K Apr 10 03:07 .
+drwxrwxr-x 4 max max 4.0K Apr 10 03:08 ..
+-rw-rw-r-- 1 max max 1.4K Apr 10 02:58 file11
+-rw-rw-r-- 1 max max    4 Apr 10 02:55 file.txt
+                                                                                         
+┌──(max㉿kali)-[~/work/DZ]
+└─$ mv file.txt ./work
+                                                                                         
+┌──(max㉿kali)-[~/work/DZ]
+└─$ mv file.txt ../work
+mv: cannot stat 'file.txt': No such file or directory
+                                                                                         
+┌──(max㉿kali)-[~/work/DZ]
+└─$ mv file11 ../work  
+
