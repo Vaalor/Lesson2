@@ -10,3 +10,4 @@
 
 <img width="659" height="954" alt="Del_MC" src="https://github.com/user-attachments/assets/a47fc5ed-dcdf-46e7-a000-e92045c5d338" />
 
+
