@@ -2,7 +2,16 @@
 
 
 
+
+
+
 <img width="1524" height="1329" alt="Снимок экрана 2026-04-10 115841" src="https://github.com/user-attachments/assets/db3f07a9-a142-4945-9deb-12663f173691" />
+
+##  Изменение в файле VISUDO
+
+<img width="1280" height="795" alt="2026-05-01_12-58-19" src="https://github.com/user-attachments/assets/c50a57cf-08d0-462c-9a97-1b97fbc129a3" />
+
+
 
 
 
