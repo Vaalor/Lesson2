@@ -16,5 +16,8 @@
 
 
 
-# Работает без пароля.
-<img width="1497" height="1311" alt="Снимок экрана 2026-04-10 115949" src="https://github.com/user-attachments/assets/b9755624-ad93-4884-b98f-a49387fde356" />
+# Работает без пароля. Пароль не запросил после ребута
+
+
+<img width="1280" height="795" alt="2026-05-01_13-00-35" src="https://github.com/user-attachments/assets/ec55a121-aacc-40ff-9298-1553eda23681" />
+
